@@ -21,18 +21,21 @@
             
             <div class="container contacts">
                 <ul>
-                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <li><i class="fa fa-map-marker" id="bordered" aria-hidden="true"></i>
                         Manchester,UK</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i>
-                        123456789</li>
-                    <li><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                    <li><i class="fa fa-phone" id="bordered" aria-hidden="true"></i>
+                        07367186797</li>
+                    <li><i class="fa fa-envelope-open-o" id="bordered" aria-hidden="true"></i>
                         hristian.anchev@gmail.com</li>
-                    <li><i class="fa fa-linkedin" aria-hidden="true"></i>
-                         LinkedIn</li>  
+                     <!-- <li class="printer"> <a href="HRISTIYAN_ANCHEV_CV.pdf" class=""> <i class="fa fa-print " aria-hidden="true"></i>
+                        PRINT</a></li>
+                            -->
+                   <!-- <li><i class="fa fa-linkedin" aria-hidden="true"></i>
+                         LinkedIn</li>  -->
                 </ul>
             </div>
         </section>
-
+        <div class="printer ftr"><a href="HRISTIYAN_ANCHEV_CV.pdf" class="">Printable version of this page available here!</a></div>
         <section class="profile">
             <div class="container">
                 <h2 class="sml-heading">Profile</h2>
@@ -50,10 +53,29 @@
                     <hr>
 
                     <div class="grid-wrapper">
+
+                <div class="box">
+                        <div class="box-top">
+                            <h2>Training Champion</h2>
+                            <p>Manchester, United Kingdom | Mar 2019 - Present |</p>
+                        </div>
+                        <div class="box-mid"><h4>L E O N</h4></div>
+                        <ul class="box-bot">
+                            <li>Training champions act as mentors and guides in the restaurant. They impart their knowledge and experience to crew members, many of whom may be holding their first jobs</li>
+                            <li>Explain principles behind and reasons for restaurant policies, procedures, brand and menus..</li>
+                            <li>Demonstrate preparation of new menu items.</li>
+                            <li>Evaluate and offer feedback on crew member performance.</li>
+                            <li>Advise managers or supervisors of problems with performance of crew members.</li>
+
+                        </ul>
+                    </div>
+                      
+
+
                 <div class="box">
                     <div class="box-top">
                              <h3>Incident Lifecycle Coordinator</h3>
-                        <p>Sofia,Bulgaria | Aug 2018 – March 2019 |</p>
+                        <p>Sofia,Bulgaria | Aug 2018 – Mar 2019 |</p>
                     </div>
                     <div class="box-mid">
                         <h4>Hewlett Packard Enterprise / DXC Technology Service Chain
@@ -79,7 +101,7 @@
                 <div class="box">
                         <div class="box-top">
                             <h2>Barista</h2>
-                            <p>Manchester,United Kingdom | April 2017 – March 2018 |</p>
+                            <p>Manchester,United Kingdom | Apr 2017 – Mar 2018 |</p>
                         </div>
                         <div class="box-mid"><h4>Intu Trafford Centre - Pret A Manger</h4></div>
                         <ul class="box-bot">
@@ -100,7 +122,7 @@
                 <div class="box">
                     <div class="box-top">
                         <h2>Customer Advisor</h2>
-                        <p>Ruse, Bulgaria | Jan 2016 – April 2016 |</p>
+                        <p>Ruse, Bulgaria | Jan 2016 – Apr 2016 |</p>
                     </div>
                     <div class="box-mid"><h4>GP Program Consult</h4></div>
                     <ul class="box-bot">
@@ -117,7 +139,7 @@
                 <div class="box">
                         <div class="box-top">
                             <h2>Bartender</h2>
-                            <p>Ruse, Bulgaria | April 2014 - Jan2016 |</p>
+                            <p>Ruse, Bulgaria | Apr 2014 - Jan2016 |</p>
                         </div>
                         <div class="box-mid"><h4>Happy Bar&Grill</h4></div>
                         <ul class="box-bot">
@@ -138,6 +160,15 @@
                     <h2 class="sml-heading">Education</h2>
                     <hr>
                             <div class="grid-wrapper">
+
+                    <div class="box">
+                            <div class="box-top">
+                                <h3>Programming Fundamentals</h3>
+                                <p>Ongoing</p>
+                            </div>
+                            <div class="box-mid"><h4>Software University Bulgaria</h4></div>
+                        </div>
+                            <hr id="delimiter">
                     <div class="box">
                             <div class="box-top">
                                 <h3>Information Technologies in the Business</h3>
@@ -145,7 +176,7 @@
                             </div>
                             <div class="box-mid"><h4>“Angel Kanchev” University of Ruse</h4></div>
                         </div>
-                             
+                             <hr id="delimiter">
                         <div class="box">
                                 <div class="box-top">
                                     <h3>Mathematics and science</h3>
@@ -158,6 +189,8 @@
             </div>
         </section>
          
+            <div class="printer ftr"><a href="HRISTIYAN_ANCHEV_CV.pdf" class="">Printable version of this page available here!</a></div>
+
             <footer>
                 <div class="container">
                     <p>Copyright Hristiyan A.  2019</p>
@@ -220,7 +253,7 @@ section.banner{
 
 /*Banner*/
 
-i{
+i#bordered{
     border: 1px solid var(--light_grey);
     border-radius: 3px;
     padding:4px;
@@ -255,6 +288,35 @@ i{
 }
 /*END Banner*/
 
+
+/*PRINTABLE VERSION */
+
+.printer{
+    /*border: 1px solid var(--light_grey);*/
+   /* border-radius: 3px;*/
+    padding:4px;
+    background-color:black;
+}
+
+.printer a{
+    text-decoration:none;
+    color: whitesmoke;
+    
+}
+
+.printer:hover{
+background-color: orange;
+}
+
+.printer.ftr{
+    text-align:center;
+    height: 20%;
+    font-size:70%
+
+}
+
+
+/*END PRINTABLE VERSION*/
 /**************************************************************************************************/
 
 /*Profile*/
@@ -364,6 +426,10 @@ footer p{
 
 @media only screen and (min-width: 992px) {
 
+#delimiter{
+    display:none;
+}
+
 .grid-wrapper{
     display:grid;
     grid-template-columns: repeat(2, 1fr);  
@@ -383,6 +449,7 @@ section.banner{
     line-height:1.8em;
     padding:2.5em 0;
     background-color:#d33847;
+    
         }
 
 } 
